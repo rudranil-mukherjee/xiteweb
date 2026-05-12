@@ -1,0 +1,62 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://xitenodes.com/sitemap.xml
+Sitemap: https://xitenodes.com/sitemap.rss
+
+# Disallow sensitive areas
+Disallow: /login-redirect
+Disallow: /api/
+Disallow: /admin/
+
+# Allow important static files & pages
+Allow: /EEE.ico
+Allow: /vite.svg
+Allow: /images/
+Allow: /sitemap.xml
+Allow: /sitemap.rss
+Allow: /robots.txt
+
+# Google Bot specific
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Google Image Bot
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /
+
+# Bing Bot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+# Yandex Bot
+User-agent: Yandex
+Allow: /
+Crawl-delay: 3
+
+# Block AI scraper bots
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+# Block aggressive scrapers
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Disallow: /
